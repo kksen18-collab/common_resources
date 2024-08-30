@@ -1,0 +1,41 @@
+1. git clone <url of git repo.git>
+2. git branch 
+3. git branch -r 
+4. git branch -a 
+5. git fetch origin
+6. git swtich <branch name>
+7. git merge origin/<branch name> 
+
+Git pull one of two ways (remote tracking already set vs remote tracking not already set)
+
+8. git pull
+9. git pull origin <branch name>
+
+Set up remote tracking - do one of the following ways:
+
+10. git checkout -b <local-branch-name> origin/<remote-branch-name>
+11. git branch --set-upstream-to=origin/<remote-branch-name>
+12. git branch -u origin/<remote-branch-name>
+13. git checkout --track origin/<remote-branch-name>
+
+14. git add .
+15. git commit -m "I have committed"
+16. git push origin <branch name>
+
+16. git status
+
+17. git stash 
+18. git stash pop 
+19. git stash list 
+20. git stash drop <stash name>
+21. git stash clear
+
+Rebase Steps:
+22. git checkout feature-branch
+23. git fetch origin  # This updates your local copy of the remote branches
+24. git rebase origin/main
+
+Merge Steps:
+25. git checkout feature-branch
+26. git fetch origin  # This updates your local copy of the remote branches
+27. git merge origin/main
